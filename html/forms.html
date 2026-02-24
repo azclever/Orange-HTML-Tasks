@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Start Eexercise 4.1 -->
+    <h2>User Registration Form</h2>
+
+    <form>
+        <label>Name:</label>
+        <input type="text" placeholder="Enter your name"><br><br>
+
+        <label>Email:</label>
+        <input type="email" required><br><br>
+
+        <label>Password:</label>
+        <input type="password"><br><br>
+
+        <label>Date of Birth:</label>
+        <input type="date"><br><br>
+
+        <label>Upload File:</label>
+        <input type="file"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <!-- End Eexercise 4.1 -->
+
+    <!-- Start Eexercise 4.2 -->
+    <h2>User Preferences</h2>
+    <form action="" >
+        <label>Biography:</label><br>
+        <textarea rows="4" cols="40">About me</textarea><br><br>
+
+        <label name="jo">Choose Country:</label>
+        <select>
+            <option value="jo" name="jo">Jordan</option>
+            <option value="us">USA</option>
+            <option value="ks">KSA</option>
+        </select><br><br>
+
+        <fieldset>
+            <legend>Contact Preference</legend>
+            <input type="radio" name="contact" value="email" id="ema"> 
+            <label for="ema">Email</label>
+            <input type="radio" name="contact" value="phone" id="pho"> 
+            <label for="pho">Phone</label>
+        </fieldset>
+
+    </form>
+    
+    <!-- End Eexercise 4.2 -->
+    
+    
+    <!-- Start Eexercise 4.3 -->
+    <form action="https://example.com/submit" method="POST" target="_blank" autocomplete="off">
+        <label>Email:</label>
+        <input type="email" name="email" required>
+        <input type="submit" value="Send">
+    </form>
+    <!-- End Eexercise 4.3 -->
+    
+    
+    <!-- Start Eexercise 4.4 -->
+    <form>
+        <label>Username:</label>
+        <input type="text" placeholder="Max 10 characters" maxlength="10" required><br><br>
+
+        <label>Age:</label>
+        <input type="number" min="18" max="60"><br><br>
+
+        <label>Favorite Language:</label>
+        <input type="text" list="langs">
+        <datalist id="langs">
+            <option value="HTML">
+            <option value="CSS">
+            <option value="JavaScript">
+            <option value="Python">
+        </datalist>
+    </form>
+    <!-- End Eexercise 4.4 -->
+    
+
+</body>
+</html>
